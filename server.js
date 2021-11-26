@@ -21,11 +21,9 @@ const {
 
 const cors = require("cors");
 
-const cors = require("cors");
-
+app.use(cors({ origin: "*" }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors({ origin: "*" }));
 
 app.get("/get-session-id", async (req, res) => {
   try {
