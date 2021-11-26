@@ -21,6 +21,16 @@ const {
 
 const cors = require("cors");
 
+const cors = require("cors");
+
+app.options(
+  "*",
+  cors({ origin: "https://dn-export.netlify.app", optionsSuccessStatus: 200 })
+);
+app.use(
+  cors({ origin: "https://dn-export.netlify.app", optionsSuccessStatus: 200 })
+);
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
