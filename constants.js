@@ -1,5 +1,5 @@
 const DOMAIN = "https://duelingnexus.com/";
-exports.PORT = 8000;
+exports.PORT = process.env.PORT || 8000;
 exports.LOGIN_URL = DOMAIN + "api/login.php";
 exports.GET_SESSION_ID_URL = DOMAIN + "api/me.php";
 exports.GET_CARD_TEXT_URL = DOMAIN + "assets/data/cards_en.json?v=260";

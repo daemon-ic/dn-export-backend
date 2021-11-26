@@ -1,5 +1,7 @@
 const express = require("express");
 const axios = require("axios");
+require("dotenv").config();
+
 const app = express();
 const {
   GET_SESSION_ID_URL,
